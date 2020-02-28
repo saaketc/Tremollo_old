@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactPlayer from 'react-player';
-const VideoPlayer = () => {
+const VideoPlayer = ({url}) => {
   return (
     <>   <div className='player-wrapper'>
-          <ReactPlayer url='https://www.youtube.com/watch?v=q2hbYKykkHE'
+      <ReactPlayer url={url}
              className= 'react-player'
               playing
               controls
