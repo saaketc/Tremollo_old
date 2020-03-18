@@ -1,11 +1,9 @@
 import React from 'react';
-
+// import Typography from '@material-ui/core/Typography';
 const Welcome = () => {
   return (
     <>
-          
-              <h1>This is Tremollo!</h1>
-              <a href='/feed'>Explore feed</a>
+      <a href="/feed">Explore feed</a>
     </>
   )
 }

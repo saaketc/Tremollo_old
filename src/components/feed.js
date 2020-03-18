@@ -34,8 +34,15 @@ const params = {
   pageNumber: 1,
   rowCount: 10
 }
-const Feed = () => {
+// const play = [
+//   { name: 'Classic' },
+//   { name: 'Happiness' },
+//   { name: 'Work life ' },
+//   { name: 'Cool' }
+// ]
+const Feed = (props) => {
 
+  const { user } = props;
   const [feed, setFeed] = useState([]);
   // const [playlist, setPlaylist] = useState(play);
   
@@ -65,6 +72,7 @@ const Feed = () => {
             description={f.caption}
             date={f.dateUpload}
             url={storageURL + f.mediaLink}
+            userId={user.userId}
           />
           <br />
         
